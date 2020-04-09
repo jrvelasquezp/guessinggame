@@ -10,6 +10,10 @@ function number_files_dir {
 }
 
 number_files_dir
+echo "Type how many files should have this directory and press Enter"
+read guess_num
+echo $guess_num
+
 #One loop
 
 #one if statement
