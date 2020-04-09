@@ -9,11 +9,15 @@ function number_files_dir {
  echo $numf
 }
 
-number_files_dir
 echo "Type how many files should have this directory and press Enter"
 read guess_num
-echo $guess_num
-
+#one if statement
+if [[ $(number_files_dir) -gt $guess_num ]]
+then
+ echo "This number is too small. Try again."
+elif [[ $(number_files_dir) -lt $guess_num ]]
+then
+ echo "This number is too big. Try again."
+fi
 #One loop
 
-#one if statement
