@@ -5,4 +5,5 @@ all:
 	date >> README.md
 	echo "\nShell script file has " >> README.md
 	wc -l < guessinggame.sh >> README.md
-	echo " code lines."
+	echo " code lines." >> README.md
+
